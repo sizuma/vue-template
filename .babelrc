@@ -1,8 +1,12 @@
 {
   "presets": [
     [
-      "env", {
-      "modules": false
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "targets": {
+          "esmodules": false
+        }
       }
     ]
   ]
