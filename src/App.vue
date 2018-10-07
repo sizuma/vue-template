@@ -1,5 +1,6 @@
 <template>
     <div>
+        <Counter></Counter>
         <router-link to="/">
             index
         </router-link>
@@ -11,9 +12,10 @@
 </template>
 
 <script>
+    import Counter from './part/Counter.vue'
     export default {
         name: "App",
-
+        components: {Counter},
         watch:{
             '$route': function (to, from) {
             }
