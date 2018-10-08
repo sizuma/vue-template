@@ -33,7 +33,7 @@ module.exports = {
     resolve: {
         extensions: ['*', '.ts', '.vue', '.json', 'scss', '.js'],
         alias: {
-            'vue$': 'vue/dist/vue.esm.js'
+            'vue$': 'vue/dist/vue.runtime.min.js',
         }
     },
 };
