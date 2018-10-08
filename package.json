@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "dev": "webpack-dev-server --hot"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +21,8 @@
     "vue-loader": "^14.2.3",
     "vue-template-compiler": "^2.5.17",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
     "vue": "^2.5.17",

@@ -36,6 +36,15 @@ module.exports = {
             'vue$': 'vue/dist/vue.runtime.min.js',
         }
     },
+    devServer: {
+        port: process.env.NODE_PORT,
+        contentBase: path.resolve(__dirname, './dist'),
+        compress: true,
+        historyApiFallback: true,
+        hot: true,
+        overlay: true,
+        open: true,
+    },
 };
 
 if (process.env.NODE_ENV === 'production') {
